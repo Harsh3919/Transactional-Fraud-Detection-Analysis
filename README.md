@@ -17,3 +17,50 @@
 
 ## Results
 - Achieved high fraud detection recall and ROC-AUC above 0.97 on the test dataset.
+
+
+
+WORK FLOW
+
+             creditcard.csv
+                    ↓
+              Load Dataset
+                    ↓
+              Data Profiling
+                    ↓
+            Missing Value Check
+                    ↓
+            Class Imbalance
+                    ↓
+                   EDA
+            ↙       ↓       ↘
+       Amount      Time    Correlation
+            ↘       ↓       ↙
+          Feature Engineering
+                    ↓
+                X and y
+                    ↓
+             Train/Test Split
+                    ↓
+              Feature Scaling
+                    ↓
+          Logistic Regression
+                    ↓
+               Predictions
+                    ↓
+       ┌────────────┼────────────┐
+       ↓            ↓            ↓
+   Precision      Recall      F1-Score
+       └────────────┼────────────┘
+                    ↓
+                ROC-AUC
+                    ↓
+           Confusion Matrix
+                    ↓
+          Feature Importance
+                    ↓
+             Power BI
+                    ↓
+             Final Report
+                    ↓
+              Presentation
